@@ -48,8 +48,8 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  height: 100%;
-  flex-basis: 22%;
+  height: 400px;
+  flex-basis:  calc(20% - 10px);
   margin: 10px;
   background-color:  #2E3A46;
 }
@@ -65,4 +65,9 @@ header {
 }
 .text-grey {
   color: grey;
+}
+.author {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 4px 0;
 }

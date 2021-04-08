@@ -34,7 +34,7 @@
         <div class="album text-grey" v-for="info in albums" v-if="selected == info.genre || selected == '' ">
             <img :src="info.poster" alt="info.author">
             <h3 class="title-album">{{ info.title }}</h3>
-            <span>{{ info.author }}</span>
+            <span class="author">{{ info.author }}</span>
             <span>{{ info.genre }}</span>
             <span>{{ info.year }}</span>
         </div>
