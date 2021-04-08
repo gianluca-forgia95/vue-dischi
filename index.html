@@ -25,6 +25,11 @@
         </div>
       </header>
       <div class="container-albums">
+        <div class="select-genre">
+          <select class="" name="" value="filtra per genere">
+            <option value=""></option>
+          </select>
+        </div>
 
         <div class="album text-grey" v-for="info in albums">
           <img :src="info.poster" alt="info.author">
