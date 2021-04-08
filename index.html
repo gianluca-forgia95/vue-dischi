@@ -32,7 +32,7 @@
           </select>
         </div>
 
-        <div class="album text-grey" v-for="info in albums">
+        <div class="album text-grey" v-for="info in albums" v-if="selected == info.genre || selected == '' ">
           <img :src="info.poster" alt="info.author">
           <h3>{{ info.title }}</h3>
           <span>{{ info.author }}</span>
