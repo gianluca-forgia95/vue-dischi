@@ -25,12 +25,12 @@
         </div>
       </header>
       <div class="container-albums">
-        
-        <div class="album text-grey">
-          <img src="img/spotify-logo.png" alt="">
-          <h3></h3>
-          <span></span>
-          <span></span>
+
+        <div class="album text-grey" v-for="info in albums">
+          <img :src="info.poster" alt="info.author">
+          <h3>{{ info.title }}</h3>
+          <span>{{ info.author }}</span>
+          <span>{{ info.genre }}</span>
         </div>
 
       </div>
