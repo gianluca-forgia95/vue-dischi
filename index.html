@@ -26,8 +26,9 @@
       </header>
       <div class="container-albums">
         <div class="select-genre">
-          <select class="" name="" value="filtra per genere">
-            <option value=""></option>
+          <select class="" name="" v-model="selected">
+            <option value="">All</option>
+            <option v-for="genre in genres">{{ genre }}</option>
           </select>
         </div>
 

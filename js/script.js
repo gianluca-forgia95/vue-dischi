@@ -3,6 +3,7 @@ el: '#root',
  data: {
    albums: [],
    genres:[],
+   selected: "",
 
 
     },
@@ -13,13 +14,11 @@ el: '#root',
         // Bonus 1
         //Ciclo l'array albums per prendere i generi
         this.albums.forEach(( album ) => {
-          if (!this.genres.includes(album.genre) ) {
-                this.genres.includes(album.genre);
-                 console.log(album.genre);
-                 console.log(this.genres);
-                 }
+          if ( !this.genres.includes(album.genre) ) {
+                this.genres.push(album.genre);
 
-        });
+                 }
+          });
 
 
      });
