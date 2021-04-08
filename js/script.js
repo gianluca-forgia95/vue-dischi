@@ -2,7 +2,7 @@ var root = new Vue({
 el: '#root',
  data: {
    albums: [],
-   genres:[],
+   genres: [],
    selected: "",
 
 
@@ -19,6 +19,11 @@ el: '#root',
 
                  }
           });
+       // Bonus 2
+       //Ordino gli Album per anno di uscita( dall'anno di uscita piu recente al piu vecchio )
+       this.albums.sort( ( olderAlbum , youngerAlbum ) => {
+         return youngerAlbum.year - olderAlbum.year;
+       });
 
 
      });

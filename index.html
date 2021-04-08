@@ -24,19 +24,21 @@
           <img src="img/spotify-logo.png" alt="Logo Spotify">
         </div>
       </header>
+      <div class="select-genre">
+        <select class="" name="" v-model="selected">
+          <option value="">All</option>
+          <option v-for="genre in genres">{{ genre }}</option>
+        </select>
+      </div>
       <div class="container-albums">
-        <div class="select-genre">
-          <select class="" name="" v-model="selected">
-            <option value="">All</option>
-            <option v-for="genre in genres">{{ genre }}</option>
-          </select>
-        </div>
+        
 
         <div class="album text-grey" v-for="info in albums" v-if="selected == info.genre || selected == '' ">
-          <img :src="info.poster" alt="info.author">
-          <h3>{{ info.title }}</h3>
-          <span>{{ info.author }}</span>
-          <span>{{ info.genre }}</span>
+            <img :src="info.poster" alt="info.author">
+            <h3>{{ info.title }}</h3>
+            <span>{{ info.author }}</span>
+            <span>{{ info.genre }}</span>
+            <span>{{ info.year }}</span>
         </div>
 
       </div>
